@@ -32,11 +32,23 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ZzbGameSDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ZzbGameSDK' => ['ZzbGameSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  #s.resource_bundles = {
+  #'ZzbGameSDK' => ['ZzbGameSDK/Assets/*.png']
+  #}
+  
+  #第三方非开源framework
+  s.vendored_frameworks = [
+    'ZzbGameSDK/webappexts/iphoneos/webappexts.framework',
+    'ZzbGameSDK/extensions/fat/extensions.framework'
+  ]
+  
+  s.public_header_files = 'ZzbGameSDK/Classes/**/*.h'
+  s.frameworks = 'UIKit','Foundation','GLKit','VideoToolbox'
+  s.libraries = 'xml2','c++'
+  s.dependency 'ZBarSDK', '~> 1.3.1'
+  s.dependency 'Reachability', '~> 3.0.0'
+  s.dependency 'YYImage', '~> 1.0.0'
+  s.dependency 'YBImageBrowser', '~> 3.0.0'
+  s.dependency 'SDWebImage', '~> 5.0.0'
+  s.dependency 'SocketRocket', '~> 0.5.0'
 end

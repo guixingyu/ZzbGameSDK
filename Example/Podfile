@@ -7,7 +7,6 @@ target 'ZzbGameSDK_Example' do
 
   target 'ZzbGameSDK_Tests' do
     inherit! :search_paths
-
-    
   end
+  
 end

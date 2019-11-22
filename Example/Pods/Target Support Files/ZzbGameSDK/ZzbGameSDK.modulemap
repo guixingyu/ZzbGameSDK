@@ -1,0 +1,6 @@
+framework module ZzbGameSDK {
+  umbrella header "ZzbGameSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

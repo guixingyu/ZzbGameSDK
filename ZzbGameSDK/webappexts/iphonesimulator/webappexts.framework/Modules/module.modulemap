@@ -1,0 +1,6 @@
+framework module webappexts {
+  umbrella header "webappexts.h"
+
+  export *
+  module * { export * }
+}
