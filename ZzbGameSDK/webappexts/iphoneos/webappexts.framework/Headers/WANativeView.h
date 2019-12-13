@@ -9,26 +9,56 @@
 #import <UIKit/UIKit.h>
 #import "WAWebViewController.h"
 
+@class WANativeView;
+
+@protocol WANativeViewDelegate <NSObject>
+
+- (void)nativeView:(WANativeView *)nativeView didSendEvent:(NSString *)name withData:(id)data withBlock:(WAWebExecuteBlock)block;
+
+@end
+
+@interface NSObject(WANativeView)
+
+- (void)zIndexUpdate:(WANativeView *)view;
+
+@end
+
 typedef void(^WANativeViewBlock)(id);
+
+@interface WANativeMethodItem : NSObject
+
+@property (nonatomic, assign) BOOL staticMethod;
+@property (nonatomic) SEL selector;
+@property (nonatomic, strong) NSString *name;
+
+@end
 
 @interface WANativeView : UIView
 
 @property (nonatomic, weak, readonly) WAWebViewController *webViewController;
 @property (nonatomic, readonly) NSString *handlerID;
+@property (nonatomic, strong) NSString  *viewID;
 @property (nonatomic, assign) NSInteger zIndex;
-@property (nonatomic, strong) NSString *viewID;
+@property (nonatomic, assign) BOOL      fixed;
+
+@property (nonatomic, weak) id <WANativeViewDelegate> delegate;
 
 /**
  * 注册可以被js调用的方法
  * @param method    监听方法
  * @param selector  监听回调 -sel:(NSArray*)params block:(MHNativeViewBlock)block
  */
-- (void)registerMethod:(NSString *)method selector:(SEL)selector;
++ (void)registerInstanceMethod:(NSString *)method selector:(SEL)selector;
 
 + (void)registerMethod:(NSString *)method selector:(SEL)selector;
 
-- (NSArray<NSString *> *)methods;
-+ (NSArray<NSString *> *)methods;
+/**
+ * 获得注册的方法信息
+ */
++ (NSDictionary<NSString*, WANativeMethodItem*> *)methods;
+
+//- (NSArray<NSString *> *)methods;
+//+ (NSArray<NSString *> *)methods;
 
 - (void)setFrameRect:(NSDictionary *)rect;
 
@@ -53,5 +83,13 @@ typedef void(^WANativeViewBlock)(id);
  * @param block 回调
  */
 - (void)sendEvent:(NSDictionary *)data block:(WAWebExecuteBlock)block;
+
+- (void)sendEvent:(NSString *)eventName withData:(id)data withBlock:(WAWebExecuteBlock)block;
+
+- (void)remove;
+
+@end
+
+@interface WANativeButton : UIButton
 
 @end

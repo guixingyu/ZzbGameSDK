@@ -1,90 +1,93 @@
 #ifndef WAEMainViewController
-#define WAEMainViewController UORespondViewController
+#define WAEMainViewController TKDensityPretendViewController
 #endif
 #ifndef WAEAppControlDelegate
-#define WAEAppControlDelegate UOPostponeuaDelegate
+#define WAEAppControlDelegate TKSinsDelegate
 #endif
 #ifndef WAEAppResponse
-#define WAEAppResponse UOCardOffuaScarua
+#define WAEAppResponse TKWealthClassifications
 #endif
 #ifndef WAEAppControl
-#define WAEAppControl UORememberShavesPiano
+#define WAEAppControl TKVictoriaProsperitys
 #endif
 #ifndef WAEWebAppViewController
-#define WAEWebAppViewController UOFixingsUrgeuaViewController
+#define WAEWebAppViewController TKSidesViewController
 #endif
 #ifndef WAEImageViewDelegate
-#define WAEImageViewDelegate UOLevelWinguaDelegate
+#define WAEImageViewDelegate TKNormallyuaDelegate
 #endif
 #ifndef WAEMenuItem
-#define WAEMenuItem UOSailorMistress
+#define WAEMenuItem TKNeglectsFitPrecious
 #endif
 #ifndef WAEAppResponseDelegate
-#define WAEAppResponseDelegate UOPrisonersLungDelegate
+#define WAEAppResponseDelegate TKRailroadsMaterialismDelegate
 #endif
 #ifndef WARows
-#define WARows UORefineReedsNaughtys
+#define WARows TKPileuaCompletelyPin
 #endif
 #ifndef WAField
-#define WAField UOMotorsMeanuaProtection
+#define WAField TKUnimaginedMaintenanceShortly
 #endif
 #ifndef WAModule
-#define WAModule UOInsMedalsMultiples
+#define WAModule TKRaidsLogicDay
 #endif
 #ifndef WATable
-#define WATable UOCardsTanksua
+#define WATable TKDenaturationSeedsSatisfactorys
 #endif
 #ifndef WANativeView
-#define WANativeView UOOpportunitiesuaView
+#define WANativeView TKMemorialsView
 #endif
 #ifndef WAWebViewController
-#define WAWebViewController UOTherapysGlassuaViewController
+#define WAWebViewController TKMeanUrgentsViewController
 #endif
 #ifndef WAWebExecuteBlock
-#define WAWebExecuteBlock UOOriginalsRice
+#define WAWebExecuteBlock TKWomanuaUnloadUnnecessary
 #endif
 #ifndef WAUtil
-#define WAUtil UOMayAdjs
+#define WAUtil TKSitResidenceRetorts
 #endif
 #ifndef WAWebPluginBlock
-#define WAWebPluginBlock UOMixShiftua
+#define WAWebPluginBlock TKMagicPlay
 #endif
 #ifndef WAWebPlugin
-#define WAWebPlugin UONefjuBladeuaPlugin
+#define WAWebPlugin TKRoughsPlugin
 #endif
 #ifndef WAWebPluginControl
-#define WAWebPluginControl UOResolutionsWeatherua
+#define WAWebPluginControl TKActivitiesPigLouisua
 #endif
 #ifndef WAEImageView
-#define WAEImageView UOLuuaView
+#define WAEImageView TKAsideView
 #endif
 #ifndef setWeakUpdate
-#define setWeakUpdate bastenuaVelvets
+#define setWeakUpdate yesterdaysElectrodes
 #endif
 #ifndef colorFromCSS
-#define colorFromCSS nightua
+#define colorFromCSS secondsBars
 #endif
 #ifndef launchSettings
-#define launchSettings occupationsBandFroms
+#define launchSettings ratesMostsInstalleds
 #endif
 #ifndef dataWithObject
-#define dataWithObject silk
+#define dataWithObject robbersEconomicsScheme
 #endif
 #ifndef requestAppInfo
-#define requestAppInfo professionuaReplysSale
+#define requestAppInfo beaconSacred
 #endif
 #ifndef setAppRootPath
-#define setAppRootPath woodenua
+#define setAppRootPath huuaLeiuaLips
 #endif
 #ifndef setServerURL
-#define setServerURL shadow
+#define setServerURL rotua
 #endif
 #ifndef controlFromID
-#define controlFromID regrets
+#define controlFromID russiansKneess
 #endif
 #ifndef WAUnityObject
-#define WAUnityObject UORealmsAmbiguitys
+#define WAUnityObject TKRootuaSisWalkua
 #endif
 #ifndef WAEAnimationView
-#define WAEAnimationView UOAuaRentuaView
+#define WAEAnimationView TKReceiveView
+#endif
+#ifndef WAWebViewControllerResizeEvent
+#define WAWebViewControllerResizeEvent TKYouUpstairs
 #endif

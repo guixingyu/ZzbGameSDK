@@ -65,7 +65,8 @@ typedef enum  {
 
 @end
 
-typedef void (^WAEWebAppRequestCompleteBlock)(NSError * __nullable error, WAEAppResponse * __nullable info);
+typedef void (^WAEWebAppRequestCompleteBlock)(NSError * __nullable error, WAEAppResponse * __nullable info, WAEAppResponse * __nullable base);
+typedef void (^WAEWebAppControlCompleteBlock)(NSError * __nullable error, WAEAppResponse * __nullable info);
 
 @protocol WAEAppControlDelegate <NSObject>
 
@@ -75,7 +76,7 @@ typedef void (^WAEWebAppRequestCompleteBlock)(NSError * __nullable error, WAEApp
 - (void)appControl:(WAEAppControl *)control processText:(NSString *)text;
 - (void)appControlDidReady:(WAEAppControl *)control;
 - (void)appControl:(WAEAppControl *)control didFail:(NSError *)error;
-- (void)appControl:(WAEAppControl *)control session:(NSURLSession *)session requestApp:(NSString *)appID block:(WAEWebAppRequestCompleteBlock)block;
+- (void)appControl:(WAEAppControl *)control session:(NSURLSession *)session requestApp:(NSString *)appID block:(WAEWebAppControlCompleteBlock)block;
 
 @end
 
@@ -141,6 +142,7 @@ typedef void (^WAEWebAppRequestCompleteBlock)(NSError * __nullable error, WAEApp
 + (void)setAppRootPath:(NSString *)path;
 
 - (void)requestAppInfo:(NSString *)appID
+                baseID:(NSString *)baseID
                session:(NSURLSession *)session
                  block:(WAEWebAppRequestCompleteBlock)block;
 

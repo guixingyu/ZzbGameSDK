@@ -49,4 +49,6 @@ insets; \
 + (UIImage *)loadImageWithName:(NSString *)name withBundle:(NSString *)bundle;
 + (NSString *)text:(NSDictionary *)dic;
 
++ (NSURL *)caculateURL:(NSURL *)baseURL withString:(NSString *)url;
+
 @end

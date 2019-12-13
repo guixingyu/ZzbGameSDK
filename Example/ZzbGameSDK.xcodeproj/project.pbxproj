@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01CD7F290B3240072DD2A300 /* Pods_ZzbGameSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D1C400964585E647582E3 /* Pods_ZzbGameSDK_Tests.framework */; };
-		05AD85C61D05E1C8A1A8132B /* Pods_ZzbGameSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF758A49A809D3315E58F1 /* Pods_ZzbGameSDK_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* ZZBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* ZZBAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* ZZBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ZZBViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,7 +20,27 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7D12C76E239F42310071F4A4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C76D239F42310071F4A4 /* StoreKit.framework */; };
+		7D12C770239F42430071F4A4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C76F239F42430071F4A4 /* MobileCoreServices.framework */; };
+		7D12C772239F424E0071F4A4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C771239F424E0071F4A4 /* WebKit.framework */; };
+		7D12C774239F426A0071F4A4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C773239F426A0071F4A4 /* MediaPlayer.framework */; };
+		7D12C776239F42750071F4A4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C775239F42750071F4A4 /* CoreMedia.framework */; };
+		7D12C778239F427E0071F4A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C777239F427E0071F4A4 /* CoreLocation.framework */; };
+		7D12C77A239F42870071F4A4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C779239F42870071F4A4 /* AVFoundation.framework */; };
+		7D12C77C239F42920071F4A4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C77B239F42920071F4A4 /* CoreTelephony.framework */; };
+		7D12C77E239F42AA0071F4A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C77D239F42AA0071F4A4 /* SystemConfiguration.framework */; };
+		7D12C780239F42C00071F4A4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C77F239F42C00071F4A4 /* AdSupport.framework */; };
+		7D12C782239F42CA0071F4A4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C781239F42CA0071F4A4 /* CoreMotion.framework */; };
+		7D12C784239F42D30071F4A4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C783239F42D30071F4A4 /* Accelerate.framework */; };
+		7D12C786239F42DF0071F4A4 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C785239F42DF0071F4A4 /* libresolv.9.tbd */; };
+		7D12C788239F42F00071F4A4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C787239F42F00071F4A4 /* libc++.tbd */; };
+		7D12C78A239F42FB0071F4A4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C789239F42FB0071F4A4 /* libz.tbd */; };
+		7D12C78C239F43080071F4A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D12C78B239F43080071F4A4 /* libsqlite3.tbd */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		883236202399F11300616DF8 /* ZZBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8832361F2399F11200616DF8 /* ZZBTabBarController.m */; };
+		883236232399F2B000616DF8 /* ZZBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883236222399F2B000616DF8 /* ZZBDemoViewController.m */; };
+		D581EE2038BDF4BDA1743D44 /* libPods-ZzbGameSDK_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F36DF13BBE0C37D34843EE /* libPods-ZzbGameSDK_Tests.a */; };
+		FA44AB3528D491B0C6AC0165 /* libPods-ZzbGameSDK_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FA1F1E5C82A9CD013828F7 /* libPods-ZzbGameSDK_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5DAF758A49A809D3315E58F1 /* Pods_ZzbGameSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZzbGameSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ZzbGameSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZzbGameSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +64,6 @@
 		6003F59B195388D20070C39A /* ZzbGameSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZzbGameSDK-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* ZZBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* ZZBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* ZZBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* ZZBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* ZzbGameSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZzbGameSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,13 +72,35 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D12C76D239F42310071F4A4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7D12C76F239F42430071F4A4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7D12C771239F424E0071F4A4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7D12C773239F426A0071F4A4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7D12C775239F42750071F4A4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7D12C777239F427E0071F4A4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7D12C779239F42870071F4A4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7D12C77B239F42920071F4A4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7D12C77D239F42AA0071F4A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7D12C77F239F42C00071F4A4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7D12C781239F42CA0071F4A4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		7D12C783239F42D30071F4A4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7D12C785239F42DF0071F4A4 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		7D12C787239F42F00071F4A4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7D12C789239F42FB0071F4A4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7D12C78B239F43080071F4A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7D12C790239F43F00071F4A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		910D1C400964585E647582E3 /* Pods_ZzbGameSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZzbGameSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8832361E2399F11200616DF8 /* ZZBTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBTabBarController.h; sourceTree = "<group>"; };
+		8832361F2399F11200616DF8 /* ZZBTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBTabBarController.m; sourceTree = "<group>"; };
+		883236212399F2B000616DF8 /* ZZBDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBDemoViewController.h; sourceTree = "<group>"; };
+		883236222399F2B000616DF8 /* ZZBDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBDemoViewController.m; sourceTree = "<group>"; };
+		97F36DF13BBE0C37D34843EE /* libPods-ZzbGameSDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZzbGameSDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0882FB34FD89DB3B00FA1C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BDF82DDF242A53FF91E6BC00 /* Pods-ZzbGameSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZzbGameSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZzbGameSDK_Tests/Pods-ZzbGameSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFF9906F5F84BC952935A62E /* Pods-ZzbGameSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZzbGameSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZzbGameSDK_Tests/Pods-ZzbGameSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D4A1B5C52E2A55CDCC570AE8 /* Pods-ZzbGameSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZzbGameSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-ZzbGameSDK_Example/Pods-ZzbGameSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D66DCD4A5E39D87A790D26E9 /* ZzbGameSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZzbGameSDK.podspec; path = ../ZzbGameSDK.podspec; sourceTree = "<group>"; };
+		D66DCD4A5E39D87A790D26E9 /* ZzbGameSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZzbGameSDK.podspec; path = ../ZzbGameSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E7FA1F1E5C82A9CD013828F7 /* libPods-ZzbGameSDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZzbGameSDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21750BC06613385FA86D1CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F40099A115CE7C998651E521 /* Pods-ZzbGameSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZzbGameSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZzbGameSDK_Example/Pods-ZzbGameSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,10 +110,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D12C78C239F43080071F4A4 /* libsqlite3.tbd in Frameworks */,
+				7D12C78A239F42FB0071F4A4 /* libz.tbd in Frameworks */,
+				7D12C788239F42F00071F4A4 /* libc++.tbd in Frameworks */,
+				7D12C786239F42DF0071F4A4 /* libresolv.9.tbd in Frameworks */,
+				7D12C784239F42D30071F4A4 /* Accelerate.framework in Frameworks */,
+				7D12C782239F42CA0071F4A4 /* CoreMotion.framework in Frameworks */,
+				7D12C780239F42C00071F4A4 /* AdSupport.framework in Frameworks */,
+				7D12C77E239F42AA0071F4A4 /* SystemConfiguration.framework in Frameworks */,
+				7D12C77C239F42920071F4A4 /* CoreTelephony.framework in Frameworks */,
+				7D12C77A239F42870071F4A4 /* AVFoundation.framework in Frameworks */,
+				7D12C778239F427E0071F4A4 /* CoreLocation.framework in Frameworks */,
+				7D12C776239F42750071F4A4 /* CoreMedia.framework in Frameworks */,
+				7D12C774239F426A0071F4A4 /* MediaPlayer.framework in Frameworks */,
+				7D12C772239F424E0071F4A4 /* WebKit.framework in Frameworks */,
+				7D12C770239F42430071F4A4 /* MobileCoreServices.framework in Frameworks */,
+				7D12C76E239F42310071F4A4 /* StoreKit.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				05AD85C61D05E1C8A1A8132B /* Pods_ZzbGameSDK_Example.framework in Frameworks */,
+				FA44AB3528D491B0C6AC0165 /* libPods-ZzbGameSDK_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +140,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				01CD7F290B3240072DD2A300 /* Pods_ZzbGameSDK_Tests.framework in Frameworks */,
+				D581EE2038BDF4BDA1743D44 /* libPods-ZzbGameSDK_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,12 +171,28 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D12C78B239F43080071F4A4 /* libsqlite3.tbd */,
+				7D12C789239F42FB0071F4A4 /* libz.tbd */,
+				7D12C787239F42F00071F4A4 /* libc++.tbd */,
+				7D12C785239F42DF0071F4A4 /* libresolv.9.tbd */,
+				7D12C783239F42D30071F4A4 /* Accelerate.framework */,
+				7D12C781239F42CA0071F4A4 /* CoreMotion.framework */,
+				7D12C77F239F42C00071F4A4 /* AdSupport.framework */,
+				7D12C77D239F42AA0071F4A4 /* SystemConfiguration.framework */,
+				7D12C77B239F42920071F4A4 /* CoreTelephony.framework */,
+				7D12C779239F42870071F4A4 /* AVFoundation.framework */,
+				7D12C777239F427E0071F4A4 /* CoreLocation.framework */,
+				7D12C775239F42750071F4A4 /* CoreMedia.framework */,
+				7D12C773239F426A0071F4A4 /* MediaPlayer.framework */,
+				7D12C771239F424E0071F4A4 /* WebKit.framework */,
+				7D12C76F239F42430071F4A4 /* MobileCoreServices.framework */,
+				7D12C76D239F42310071F4A4 /* StoreKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				5DAF758A49A809D3315E58F1 /* Pods_ZzbGameSDK_Example.framework */,
-				910D1C400964585E647582E3 /* Pods_ZzbGameSDK_Tests.framework */,
+				E7FA1F1E5C82A9CD013828F7 /* libPods-ZzbGameSDK_Example.a */,
+				97F36DF13BBE0C37D34843EE /* libPods-ZzbGameSDK_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,8 +203,10 @@
 				6003F59C195388D20070C39A /* ZZBAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZZBAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* ZZBViewController.h */,
-				6003F5A6195388D20070C39A /* ZZBViewController.m */,
+				8832361E2399F11200616DF8 /* ZZBTabBarController.h */,
+				8832361F2399F11200616DF8 /* ZZBTabBarController.m */,
+				883236212399F2B000616DF8 /* ZZBDemoViewController.h */,
+				883236222399F2B000616DF8 /* ZZBDemoViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -208,6 +278,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				C1F0E629EE89EAFC90235D87 /* [CP] Embed Pods Frameworks */,
+				2DE2FBC5AEB497C06C376A43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +320,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = C83SWFGFBJ;
+						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -260,8 +332,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -319,6 +393,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2DE2FBC5AEB497C06C376A43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZzbGameSDK_Example/Pods-ZzbGameSDK_Example-resources.sh",
+				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ZzbGameSDK/ZzbGameSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPBLocalizations.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZzbGameSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZzbGameSDK_Example/Pods-ZzbGameSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		53536E5F1243166739AC9628 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,31 +454,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZzbGameSDK_Example/Pods-ZzbGameSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework",
-				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
-				"${BUILT_PRODUCTS_DIR}/ZBarSDK/ZBarSDK.framework",
 				"${PODS_ROOT}/../../ZzbGameSDK/webappexts/iphoneos/webappexts.framework",
-				"${BUILT_PRODUCTS_DIR}/ZzbGameSDK/ZzbGameSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBImageBrowser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBarSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/webappexts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZzbGameSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,7 +475,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ZZBAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* ZZBViewController.m in Sources */,
+				883236232399F2B000616DF8 /* ZZBDemoViewController.m in Sources */,
+				883236202399F11300616DF8 /* ZZBTabBarController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +520,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				71719F9E1E33DC2100824A3D /* Base */,
+				7D12C790239F43F00071F4A4 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -471,6 +563,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -503,6 +596,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -514,15 +608,24 @@
 			baseConfigurationReference = F40099A115CE7C998651E521 /* Pods-ZzbGameSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C83SWFGFBJ;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZzbGameSDK/ZzbGameSDK-Prefix.pch";
 				INFOPLIST_FILE = "ZzbGameSDK/ZzbGameSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzb.gamesdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,15 +635,24 @@
 			baseConfigurationReference = D4A1B5C52E2A55CDCC570AE8 /* Pods-ZzbGameSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C83SWFGFBJ;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZzbGameSDK/ZzbGameSDK-Prefix.pch";
 				INFOPLIST_FILE = "ZzbGameSDK/ZzbGameSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzb.gamesdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

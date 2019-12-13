@@ -18,12 +18,28 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZzbGameSDK/Classes/**/*",
+  "source_files": [
+    "ZzbGameSDK/Classes/**/*",
+    "ZzbGameSDK/Classes/BUDA-APP/**/*",
+    "ZzbGameSDK/Classes/BUDA-APP/**/**/*"
+  ],
+  "pod_target_xcconfig": {
+    "VALID_ARCHS[sdk=iphonesimulator*]": ""
+  },
+  "resource_bundles": {
+    "ZzbGameSDK": [
+      "ZzbGameSDK/Assets/*.png"
+    ]
+  },
   "vendored_frameworks": [
     "ZzbGameSDK/webappexts/iphoneos/webappexts.framework",
-    "ZzbGameSDK/extensions/fat/extensions.framework"
+    "ZzbGameSDK/extensions/fat/extensions.framework",
+    "ZzbGameSDK/UTDID.framework"
   ],
-  "public_header_files": "ZzbGameSDK/Classes/**/*.h",
+  "public_header_files": [
+    "ZzbGameSDK/Classes/ZzbGameManager.h",
+    "ZzbGameSDK/Classes/BUDAdManager.h"
+  ],
   "frameworks": [
     "UIKit",
     "Foundation",
@@ -44,14 +60,32 @@
     "YYImage": [
       "~> 1.0.0"
     ],
-    "YBImageBrowser": [
-      "~> 3.0.0"
-    ],
-    "SDWebImage": [
-      "~> 5.0.0"
+    "IDMPhotoBrowser": [
+      "~> 1.11.3"
     ],
     "SocketRocket": [
       "~> 0.5.0"
+    ],
+    "LBXScan/LBXNative": [
+      "~> 2.3"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ],
+    "AFNetworking": [
+      "~> 3.0"
+    ],
+    "JSONModel": [
+
+    ],
+    "MJRefresh": [
+      "~> 3.2.2"
+    ],
+    "SDCycleScrollView": [
+      "~> 1.80"
+    ],
+    "Bytedance-UnionAD": [
+      "~> 2.5.1.5"
     ]
   }
 }

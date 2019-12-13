@@ -28,8 +28,11 @@ typedef NS_ENUM(NSUInteger, WAWindowFeature) {
 };
 
 @class WAWebPlugin;
+@class WAContainer;
 
 @class WAWebViewController;
+
+FOUNDATION_EXPORT NSString * const WAWebViewControllerResizeEvent;
 
 #pragma mark -  Unity Extension
 
@@ -37,19 +40,43 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
 
 @interface WAUnityObject : NSObject
 
+/**
+ * 构造函数
+ * @param params {NSArray*} 构造参数
+ */
 - (id)initWithParams:(NSArray * _Nullable)params;
 
+/**
+ * 注册对象方法
+ */
 - (void)registerMethod:(WAUnityMethodBlock)block forKey:(NSString *)key;
+
+/**
+ * 注册静态方法
+ */
 + (void)registerMethod:(WAUnityMethodBlock)block forKey:(NSString *)key;
 
+/**
+ * 向小程序发送消息
+ */
 - (void)sendEvent:(NSString *)type params:(NSArray *)params block:(WAWebExecuteBlock _Nullable)block;\
 
 - (WAWebViewController *)webViewController;
 
+/**
+ * 摧毁对象
+ */
+- (void)destroy;
+
+/**
+ * 生命周期
+ */
 - (void)ready;
 - (void)unload;
 - (void)onShow;
 - (void)onHide;
+
+@property (nonatomic, readonly) NSString *key;
 
 @end
 
@@ -93,6 +120,7 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
  */
 - (void)ready;
 
+- (void)load;
 - (void)unload;
 
 - (void)onHide;
@@ -114,7 +142,7 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
 /**
  * webView
  */
-@property (nonatomic, readonly) WKWebView   *webView;
+@property (nonatomic, readonly) WAContainer *container;
 
 /**
  * 覆盖于webView之上的一个遮罩，会在完成加载时fadeOut.
@@ -139,6 +167,8 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
  */
 @property (nonatomic, strong) NSURL     *workURL;
 
+@property (nonatomic, readonly) NSURL   *currentURL;
+
 /**
  * 已经注册的插件
  */
@@ -149,7 +179,6 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
 @property (nonatomic, readonly) NSString    *appIdentifier;
 @property (nonatomic, readonly) NSString    *appFilesDir;
 
-@property (nonatomic, strong) NSString *defaultSKey;
 @property (nonatomic, strong) NSString *workSKey;
 
 @property (nonatomic, weak) id<WAWebViewControllerDelegate> delegate;
@@ -192,6 +221,8 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
  */
 - (void)registerNativeView:(Class)viewClass forType:(NSString *)type;
 
+- (Class)findNativeView:(NSString *)type;
+
 - (void)registerObject:(id)object forKey:(NSString *)key;
 
 - (void)processConfig:(NSDictionary *)configs;
@@ -214,6 +245,9 @@ typedef void(^WAUnityMethodBlock)(NSArray * _Nullable params, WAWebPluginBlock _
  */
 + (void)clearCacheData:(NSString *)name;
 + (void)clearAllCacheData;
+
+- (void)addEventListener:(NSString *)name target:(id)target selector:(SEL)selector;
+- (void)removeEventListener:(NSString *)name target:(id)target selector:(SEL)selector;
 
 @end
 

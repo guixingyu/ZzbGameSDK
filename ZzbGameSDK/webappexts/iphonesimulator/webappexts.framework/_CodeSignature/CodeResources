@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/WABundle.h</key>
+		<data>
+		35HTwMd84y7DtAIcEpuKldAhTqU=
+		</data>
+		<key>Headers/WABundle_cpp.hpp</key>
+		<data>
+		vpswHnTvAM5D2xJ/tpH5eexAymc=
+		</data>
 		<key>Headers/WAEAnimationView.h</key>
 		<data>
 		hJMAlpMdDrJpMTbj7LLwCLS5OB8=
@@ -18,7 +26,7 @@
 		</data>
 		<key>Headers/WAEWebAppViewController.h</key>
 		<data>
-		0J9rjegi1cj+L0w06HysYZkCht4=
+		TmsaL/9qa22Q8Nmm4O2v4esUbkY=
 		</data>
 		<key>Headers/WAModule.h</key>
 		<data>
@@ -26,27 +34,27 @@
 		</data>
 		<key>Headers/WANativeView.h</key>
 		<data>
-		Ed8eeR1Iz3Bjb2eyCVV9kIgIJ9Q=
+		zMDB+3mVBJs84+/v0NCWAEJK0Sw=
 		</data>
 		<key>Headers/WAUtil.h</key>
 		<data>
-		JJF4US5jxzrF4CkHu327abf3sKE=
+		165Fw0PepSZ1Cp9zl6/AjPjfYcs=
 		</data>
 		<key>Headers/WAWebViewController.h</key>
 		<data>
-		Z0Ko9/lDb6Amh0OO1b/6rqrUYZw=
+		o1yd1qmruVWpS3onjji979ToXcQ=
 		</data>
 		<key>Headers/symbols.h</key>
 		<data>
-		zBDncwgbBf1SAcOMYBBO8Ch0pZM=
+		NJKv4cJFl0LaCdbPQ5QZ8TKs/qU=
 		</data>
 		<key>Headers/webappexts.h</key>
 		<data>
-		fYTqipuyfKMYOI8y3AEEUfUY6Gw=
+		U4dokAz+SVoBfqfD7MKTzM8V1Zo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/tDMQatI7EgNW9SoMsRF+NZXJBY=
+		i6WUWp3ey1K6ue60MwAxaO/Ud0A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,6 +63,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/WABundle.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			35HTwMd84y7DtAIcEpuKldAhTqU=
+			</data>
+			<key>hash2</key>
+			<data>
+			RJiLDsPXpoxBIdp1r+lI47rCeHYrGP/3Kui/8WrM6/Q=
+			</data>
+		</dict>
+		<key>Headers/WABundle_cpp.hpp</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vpswHnTvAM5D2xJ/tpH5eexAymc=
+			</data>
+			<key>hash2</key>
+			<data>
+			rmmEnH7uJSeKnKntZqPCwWjsK4UvepQ1XayLCBLA/qQ=
+			</data>
+		</dict>
 		<key>Headers/WAEAnimationView.h</key>
 		<dict>
 			<key>hash</key>
@@ -92,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0J9rjegi1cj+L0w06HysYZkCht4=
+			TmsaL/9qa22Q8Nmm4O2v4esUbkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			sbqpdzO6sSALOct6jdheTztM38MNZ7NhHZx/rcDq5Js=
+			06woM1COq5d3AATSVLAvOIohSnnRvWFG226JucQ5rCI=
 			</data>
 		</dict>
 		<key>Headers/WAModule.h</key>
@@ -114,55 +144,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ed8eeR1Iz3Bjb2eyCVV9kIgIJ9Q=
+			zMDB+3mVBJs84+/v0NCWAEJK0Sw=
 			</data>
 			<key>hash2</key>
 			<data>
-			k/WR/vWcX8/Mc5znTsixqvPKLFPorPI9qw2k3LJ6OHY=
+			JfDWBUIoUUaddf0EaXcSPKsCJElZsCQSz9iTLy/zshU=
 			</data>
 		</dict>
 		<key>Headers/WAUtil.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JJF4US5jxzrF4CkHu327abf3sKE=
+			165Fw0PepSZ1Cp9zl6/AjPjfYcs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ysh6bQTEGG+kuRxOzEANZEw/IRC40UT6fNLGFUNqcow=
+			0+4KcbiymXNnyKQ2idw4layzf230yOqOGu3EXyzgXGY=
 			</data>
 		</dict>
 		<key>Headers/WAWebViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0Ko9/lDb6Amh0OO1b/6rqrUYZw=
+			o1yd1qmruVWpS3onjji979ToXcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kX08JJBvvwbSWx0WcCn/WdlbSN7wzDtXudu8JFuIQzY=
+			IFXtzr7fNSgtMPKL2xGvFBxtL9zX7TseLbtRJZx409w=
 			</data>
 		</dict>
 		<key>Headers/symbols.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zBDncwgbBf1SAcOMYBBO8Ch0pZM=
+			NJKv4cJFl0LaCdbPQ5QZ8TKs/qU=
 			</data>
 			<key>hash2</key>
 			<data>
-			m/tmWz1gkiXI5EWQePMByT+Q2jIt6xrNNUCtdcxLFl8=
+			hsYHXh+LIZBperqK0sGHsUb1oG7p0v8dbpGJaogjvn4=
 			</data>
 		</dict>
 		<key>Headers/webappexts.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fYTqipuyfKMYOI8y3AEEUfUY6Gw=
+			U4dokAz+SVoBfqfD7MKTzM8V1Zo=
 			</data>
 			<key>hash2</key>
 			<data>
-			CTQgZtOHPXUayXfaS/O7rndeFZR+FH0i5zufbvaibf0=
+			bCYJ2aDYK3ioTjNApfbxm6OzHsibNIZ5dOocdcqwgjM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

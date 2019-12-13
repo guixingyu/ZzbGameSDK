@@ -1,0 +1,1 @@
+../../../../../ZzbGameSDK/Classes/ZzbNewGameCollectionCell.h

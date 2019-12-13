@@ -153,24 +153,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZBarSDK/ZBarSDK.framework"
   install_framework "${PODS_ROOT}/../../ZzbGameSDK/webappexts/iphoneos/webappexts.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZzbGameSDK/ZzbGameSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZBarSDK/ZBarSDK.framework"
   install_framework "${PODS_ROOT}/../../ZzbGameSDK/webappexts/iphoneos/webappexts.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZzbGameSDK/ZzbGameSDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

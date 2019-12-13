@@ -1,7 +1,9 @@
 
-pod 'ZBarSDK', '> 1.0.0'
+pod 'ZBarSDK', git: 'https://github.com/qlpio/ZBar.git'
 pod 'Reachability'
 pod 'YYImage', '> 1.0.0'
-pod 'YBImageBrowser', '> 3.0.0'
-pod 'SDWebImage', '> 5.0.0'
+pod 'IDMPhotoBrowser', '~> 1.11.3'
+pod 'SDWebImage'
 pod 'SocketRocket', '> 0.5.0'
+pod 'LBXScan/LBXNative','~> 2.3'
+

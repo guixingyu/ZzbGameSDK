@@ -10,12 +10,15 @@
 
 @implementation TestView
 
++ (void)load {
+    [self registerInstanceMethod:@"send"
+                selector:@selector(send:block:)];
+}
+
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor redColor];
-        [self registerMethod:@"send"
-                    selector:@selector(send:block:)];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                               action:@selector(clicked)];
         [self addGestureRecognizer:tap];
