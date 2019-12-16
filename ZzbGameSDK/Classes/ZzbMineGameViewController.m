@@ -9,7 +9,8 @@
 #import "ZzbHeader.h"
 #import "ZzbShowAllTableViewCell.h"
 #import "ZzbShowAllListModel.h"
-#import "DemoViewController.h"
+//#import "DemoViewController.h"
+#import <webappexts/WAEMainViewController.h>
 #import "ZzbDelTipView.h"
 #import "ZzbNoDataView.h"
 #import "ZzbUtil.h"
@@ -508,7 +509,7 @@
     if (model.appletInfo.id && model.appletInfo.appletKey) {
         [ZzbUtil handleEnterGame:model.appletInfo.id andAppkey: model.appletInfo.appletKey];
     }
-    DemoViewController *ctrl = [[DemoViewController alloc] init];
+    WAEMainViewController *ctrl = [[WAEMainViewController alloc] init];
     ctrl.apiHost = HOST_URL;
     
     if (model.appletInfo.appletAlias) {
