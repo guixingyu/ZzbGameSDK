@@ -1,6 +1,6 @@
 {
   "name": "ZzbGameSDK",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of ZzbGameSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/guixingyu/ZzbGameSDK",
@@ -13,15 +13,13 @@
   },
   "source": {
     "git": "https://github.com/guixingyu/ZzbGameSDK.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": [
-    "ZzbGameSDK/Classes/**/*",
-    "ZzbGameSDK/Classes/BUDA-APP/**/*",
-    "ZzbGameSDK/Classes/BUDA-APP/**/**/*"
+    "ZzbGameSDK/Classes/**/*"
   ],
   "pod_target_xcconfig": {
     "VALID_ARCHS[sdk=iphonesimulator*]": ""
@@ -37,8 +35,7 @@
     "ZzbGameSDK/UTDID.framework"
   ],
   "public_header_files": [
-    "ZzbGameSDK/Classes/ZzbGameManager.h",
-    "ZzbGameSDK/Classes/BUDAdManager.h"
+    "ZzbGameSDK/Classes/ZzbGameManager.h"
   ],
   "frameworks": [
     "UIKit",
@@ -83,9 +80,6 @@
     ],
     "SDCycleScrollView": [
       "~> 1.80"
-    ],
-    "Bytedance-UnionAD": [
-      "~> 2.5.1.5"
     ]
   }
 }
