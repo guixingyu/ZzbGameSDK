@@ -36,9 +36,9 @@
     gameNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"小游戏" image:[UIImage imageNamed:@"tab_gerenziliao_weixuanzhong"] selectedImage:[UIImage imageNamed:@"tab_gerenziliao_xuanzhong"]];
 	
 
-    UINavigationController *budaNav = [BUDAdManager createGameNavController];
-    [viewControllers addObject:budaNav];
-    budaNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"广告" image:[UIImage imageNamed:@"tab_gerenziliao_weixuanzhong"] selectedImage:[UIImage imageNamed:@"tab_gerenziliao_xuanzhong"]];
+    //UINavigationController *budaNav = [BUDAdManager createGameNavController];
+    //[viewControllers addObject:budaNav];
+    //budaNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"广告" image:[UIImage imageNamed:@"tab_gerenziliao_weixuanzhong"] selectedImage:[UIImage imageNamed:@"tab_gerenziliao_xuanzhong"]];
     
 
 

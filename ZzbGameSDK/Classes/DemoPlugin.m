@@ -24,6 +24,7 @@
 }
 
 - (void)process:(id)input block:(WAWebPluginBlock)block {
+    /*
 	_block = block;
 	NSString *type = input;
 	if ([type isEqualToString:@"splash_show"]) {
@@ -46,7 +47,7 @@
 		if(self.showRewardedVideo){
 			self.showRewardedVideo();
 		}
-	}
+	}*/
 //    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Demo"
 //                                                                   message:input
 //                                                            preferredStyle:UIAlertControllerStyleAlert];

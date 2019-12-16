@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ZzbGameSDK/BUDAdManager.h>
+//#import <ZzbGameSDK/BUDAdManager.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZZBTabBarController : UITabBarController
