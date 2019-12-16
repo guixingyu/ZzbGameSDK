@@ -31,9 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = [
-	'ZzbGameSDK/Classes/**/*',
-	'ZzbGameSDK/Classes/BUDA-APP/**/*',
-	'ZzbGameSDK/Classes/BUDA-APP/**/**/*'
+	'ZzbGameSDK/Classes/**/*'
   ]
   
   s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }

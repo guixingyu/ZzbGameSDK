@@ -32,7 +32,7 @@
 
 @implementation DemoViewController {
     IMP _oldImp;
-    DemoPlugin *demo;
+    //DemoPlugin *demo;
 //    BOOL _closed;
 }
 
@@ -56,7 +56,7 @@
 
 - (void)initializePlugins {
     [super initializePlugins];
-    demo = [DemoPlugin new];
+    //demo = [DemoPlugin new];
 //	__weak DemoViewController *that = self;
 //	demo.showSplash = ^(){
 //		[that showSplash];
@@ -71,7 +71,7 @@
 //		[that showRewardedVideo];
 //	};
 	
-	[self registerPlugin:demo];
+	[self registerPlugin:[DemoPlugin new]];
 }
 
 //- (void)showSplash{
