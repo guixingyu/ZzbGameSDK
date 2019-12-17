@@ -21,7 +21,7 @@
 	CGRect frame = [UIScreen mainScreen].bounds;
 	BUSplashAdView *splashView = [[BUSplashAdView alloc] initWithSlotID:[BUDAdManager SplashId] frame:frame];
 	splashView.delegate = self;
-	UIWindow *keyWindow = [UIApplication sharedApplication].windows.firstObject;
+	//UIWindow *keyWindow = [UIApplication sharedApplication].windows.firstObject;
 	[splashView loadAdData];
 	[self.view addSubview:splashView];
 	//splashView.rootViewController = keyWindow.rootViewController;

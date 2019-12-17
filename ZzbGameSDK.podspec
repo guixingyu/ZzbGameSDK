@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZzbGameSDK'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'A short description of ZzbGameSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'guixingyu' => '460734287@qq.com' }
-  s.source           = { :git => 'https://github.com/guixingyu/ZzbGameSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/yhy/Documents/GameSDK/ios/ZzbGameSDK', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -44,7 +44,8 @@ TODO: Add long description of the pod here.
   s.vendored_frameworks = [
     'ZzbGameSDK/webappexts/iphoneos/webappexts.framework',
     'ZzbGameSDK/extensions/fat/extensions.framework',
-    'ZzbGameSDK/UTDID.framework'
+    'ZzbGameSDK/UTDID.framework',
+    'ZzbGameSDK/BUD-Frameworks/BUAdSDK.framework'
   ]
   
   s.public_header_files = [
@@ -67,5 +68,5 @@ TODO: Add long description of the pod here.
   s.dependency 'JSONModel'
   s.dependency 'MJRefresh', '~> 3.2.2'
   s.dependency 'SDCycleScrollView','~> 1.80'
-  s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'
+  #s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'
 end

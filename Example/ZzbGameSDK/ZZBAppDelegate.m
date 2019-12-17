@@ -13,7 +13,7 @@
 #import <BUAdSDK/BUSplashAdView.h>
 #import <ZzbGameSDK/BUDAdManager.h>
 
-@interface ZZBAppDelegate ()
+@interface ZZBAppDelegate ()<BUSplashAdDelegate>
 @property (nonatomic, assign) CFTimeInterval startTime;
 @end
 

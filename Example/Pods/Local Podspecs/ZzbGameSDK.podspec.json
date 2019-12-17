@@ -12,7 +12,7 @@
     "guixingyu": "460734287@qq.com"
   },
   "source": {
-    "git": "https://github.com/guixingyu/ZzbGameSDK.git",
+    "git": "/Users/yhy/Documents/GameSDK/ios/ZzbGameSDK",
     "tag": "0.4.0"
   },
   "platforms": {
@@ -32,7 +32,8 @@
   "vendored_frameworks": [
     "ZzbGameSDK/webappexts/iphoneos/webappexts.framework",
     "ZzbGameSDK/extensions/fat/extensions.framework",
-    "ZzbGameSDK/UTDID.framework"
+    "ZzbGameSDK/UTDID.framework",
+    "ZzbGameSDK/BUD-Frameworks/BUAdSDK.framework"
   ],
   "public_header_files": [
     "ZzbGameSDK/Classes/BUDAdManager.h",
@@ -94,9 +95,6 @@
     ],
     "SDCycleScrollView": [
       "~> 1.80"
-    ],
-    "Bytedance-UnionAD": [
-      "~> 2.5.1.5"
     ]
   }
 }

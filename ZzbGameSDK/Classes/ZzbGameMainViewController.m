@@ -239,6 +239,7 @@ NSString * const BUDemoStrings = @"BUDemoLanguage";
             dispatch_async(dispatch_get_main_queue(), ^(){
                 ZzbLoginModel * model = [[ZzbLoginModel alloc] initWithDictionary:responseObject error:nil];
                 if (model.success){
+                    NSLog(@"banner->successsuccesssuccesssuccesssuccess");
                     //保存token到本地
                     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
                     NSString *token = [ud objectForKey:@"zzb_LoginToken"];
