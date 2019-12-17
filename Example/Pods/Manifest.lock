@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Bytedance-UnionAD (2.5.1.5)
   - DACircularProgress (2.3.1)
   - IDMPhotoBrowser (1.11.3):
     - DACircularProgress
@@ -36,8 +37,9 @@ PODS:
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
   - ZBarSDK (1.3.1)
-  - ZzbGameSDK (0.2.0):
+  - ZzbGameSDK (0.4.0):
     - AFNetworking (~> 3.0)
+    - Bytedance-UnionAD (~> 2.5.1.5)
     - IDMPhotoBrowser (~> 1.11.3)
     - JSONModel
     - LBXScan/LBXNative (~> 2.3)
@@ -55,6 +57,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Bytedance-UnionAD
     - DACircularProgress
     - IDMPhotoBrowser
     - JSONModel
@@ -75,6 +78,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Bytedance-UnionAD: 7705ad5c88472c13b503c45d5ecc09114f063913
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   IDMPhotoBrowser: b92256d524adef4cef8f748f8fedc6cd33245989
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
@@ -88,7 +92,7 @@ SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
-  ZzbGameSDK: c2fdddac7c49a25e5334dae4d3ab72a1371bfc1f
+  ZzbGameSDK: 6929766eda193739648efa8f7a672f1f5f7689c0
 
 PODFILE CHECKSUM: 065d6284bfedb885b5f1740f10c02e2ceb5dfaf9
 

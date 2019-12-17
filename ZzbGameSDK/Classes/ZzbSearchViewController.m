@@ -10,8 +10,7 @@
 #import "ZzbShowAllTableViewCell.h"
 #import "ZzbDelTipView.h"
 #import <AFNetworking/AFNetworking.h>
-//#import "DemoViewController.h"
-#import <webappexts/WAEMainViewController.h>
+#import "DemoViewController.h"
 #import "ZzbHotWordListModel.h"
 #import "ZzbSearchHotWordCell.h"
 #import "MJRefresh.h"
@@ -480,7 +479,8 @@
             NSLog(@"appletKey%@",model.appletInfo.appletKey);
             [ZzbUtil handleEnterGame:model.appletInfo.id andAppkey: model.appletInfo.appletKey];
         }
-        WAEMainViewController *ctrl = [[WAEMainViewController alloc] init];
+        DemoViewController *ctrl = [[DemoViewController alloc] init];
+        [ctrl setAppletId:model.appletInfo.id];
         ctrl.apiHost = HOST_URL;
         
         if (model.appletInfo.appletAlias) {

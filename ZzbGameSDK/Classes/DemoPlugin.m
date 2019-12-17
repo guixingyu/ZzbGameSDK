@@ -11,8 +11,11 @@
 #import "ZzbUtil.h"
 #import "ZzbDefine.h"
 
+@interface DemoPlugin()
+@property (nonatomic,copy) WAWebPluginBlock _block;
+@end
 @implementation DemoPlugin {
-	WAWebPluginBlock _block;
+	BOOL bResponse;
 }
 
 - (id)init {
@@ -24,8 +27,9 @@
 }
 
 - (void)process:(id)input block:(WAWebPluginBlock)block {
-    /*
-	_block = block;
+	bResponse = FALSE;
+	self._block = block;
+	
 	NSString *type = input;
 	if ([type isEqualToString:@"splash_show"]) {
 		if(self.showSplash){
@@ -37,6 +41,11 @@
 		if(self.showBanner){
 			self.showBanner();
 		}
+		self._block(@{
+			@"res": @(TRUE),
+			@"id": @"123"
+		});
+		bResponse = TRUE;
 	}
 	else if([type isEqualToString:@"interstitial_show"]) {
 		if(self.showInterstitial){
@@ -47,33 +56,19 @@
 		if(self.showRewardedVideo){
 			self.showRewardedVideo();
 		}
-	}*/
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Demo"
-//                                                                   message:input
-//                                                            preferredStyle:UIAlertControllerStyleAlert];
-//    [alert addAction:[UIAlertAction actionWithTitle:@"确定"
-//                                              style:UIAlertActionStyleDefault
-//                                            handler:^(UIAlertAction * _Nonnull action) {
-//                                                block(@{
-//                                                        @"success": @(YES),
-//                                                        @"id": @"12345"
-//                                                        });
-//                                            }]];
-//    [alert addAction:[UIAlertAction actionWithTitle:@"取消"
-//                                              style:UIAlertActionStyleCancel
-//                                            handler:^(UIAlertAction * _Nonnull action) {
-//                                                block(@{@"success": @(NO)});
-//                                            }]];
-//    [self.webViewController presentViewController:alert
-//                                         animated:YES
-//                                       completion:nil];
+	}
+
 }
 
 -(void)responseHandle:(BOOL)success id:(NSString*)id {
-	_block(@{
-		@"res": @(success),
-		@"id": @"12345"
-	});
+	if(!bResponse) {
+		self._block(@{
+			@"res": @(success),
+			@"id": id
+		});
+		bResponse = TRUE;
+	}
+
 }
 
 -(void)ready {

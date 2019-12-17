@@ -1,6 +1,6 @@
 {
   "name": "ZzbGameSDK",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "summary": "A short description of ZzbGameSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/guixingyu/ZzbGameSDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/guixingyu/ZzbGameSDK.git",
-    "tag": "0.2.0"
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -35,17 +35,31 @@
     "ZzbGameSDK/UTDID.framework"
   ],
   "public_header_files": [
+    "ZzbGameSDK/Classes/BUDAdManager.h",
     "ZzbGameSDK/Classes/ZzbGameManager.h"
   ],
   "frameworks": [
     "UIKit",
     "Foundation",
     "GLKit",
-    "VideoToolbox"
+    "VideoToolbox",
+    "StoreKit",
+    "MobileCoreServices",
+    "WebKit",
+    "MediaPlayer",
+    "CoreMedia",
+    "AVFoundation",
+    "CoreLocation",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "AdSupport",
+    "CoreMotion"
   ],
   "libraries": [
     "xml2",
-    "c++"
+    "c++",
+    "z",
+    "resolv.9"
   ],
   "dependencies": {
     "ZBarSDK": [
@@ -80,6 +94,9 @@
     ],
     "SDCycleScrollView": [
       "~> 1.80"
+    ],
+    "Bytedance-UnionAD": [
+      "~> 2.5.1.5"
     ]
   }
 }

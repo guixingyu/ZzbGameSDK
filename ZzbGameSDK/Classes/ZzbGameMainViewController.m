@@ -10,8 +10,7 @@
 #import "ZzbGameMainViewController.h"
 #import <webappexts/webappexts.h>
 #import <extensions/extensions.h>
-//#import "DemoViewController.h"
-#import <webappexts/WAEMainViewController.h>
+#import "DemoViewController.h"
 #import "ZzbShowAllViewController.h"
 #import "ZzbAllTypeViewController.h"
 #import "ZzbSearchViewController.h"
@@ -926,7 +925,8 @@ NSString * const BUDemoStrings = @"BUDemoLanguage";
 
     [ZzbUtil handleEnterGame:model.appletInfo.id andAppkey:model.appletInfo.appletKey];
 	
-    WAEMainViewController *ctrl = [[WAEMainViewController alloc] init];
+    DemoViewController *ctrl = [[DemoViewController alloc] init];
+	[ctrl setAppletId:model.appletInfo.id];
     ctrl.apiHost = HOST_URL;
 	ctrl.appID = model.appletInfo.appletAlias;
     [self presentViewController:ctrl animated:YES completion:nil];
@@ -935,7 +935,8 @@ NSString * const BUDemoStrings = @"BUDemoLanguage";
 - (void)gameClick:(NSInteger)appletid appletKey:(NSString*)appletKey appletAlias:(NSString*)appletAlias{
 	//[self addToMine:model];
     [ZzbUtil handleEnterGame:appletid andAppkey:appletKey];
-    WAEMainViewController *ctrl = [[WAEMainViewController alloc] init];
+    DemoViewController *ctrl = [[DemoViewController alloc] init];
+    [ctrl setAppletId:appletid];
     ctrl.apiHost = HOST_URL;
 	ctrl.appID = appletAlias;
     [self presentViewController:ctrl animated:YES completion:nil];

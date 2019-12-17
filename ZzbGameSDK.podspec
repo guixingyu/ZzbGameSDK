@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZzbGameSDK'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'A short description of ZzbGameSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -48,11 +48,12 @@ TODO: Add long description of the pod here.
   ]
   
   s.public_header_files = [
+    'ZzbGameSDK/Classes/BUDAdManager.h',
     'ZzbGameSDK/Classes/ZzbGameManager.h'
   ]
   
-  s.frameworks = 'UIKit','Foundation','GLKit','VideoToolbox'
-  s.libraries = 'xml2','c++'
+  s.frameworks = 'UIKit','Foundation','GLKit','VideoToolbox','StoreKit','MobileCoreServices','WebKit','MediaPlayer','CoreMedia','AVFoundation','CoreLocation','CoreTelephony','SystemConfiguration','AdSupport','CoreMotion'
+  s.libraries = 'xml2','c++','z','resolv.9'
   s.dependency 'ZBarSDK', '~> 1.3.1'
   s.dependency 'Reachability', '~> 3.0.0'
   s.dependency 'YYImage', '~> 1.0.0'
@@ -66,5 +67,5 @@ TODO: Add long description of the pod here.
   s.dependency 'JSONModel'
   s.dependency 'MJRefresh', '~> 3.2.2'
   s.dependency 'SDCycleScrollView','~> 1.80'
-  #s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'
+  s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'
 end
