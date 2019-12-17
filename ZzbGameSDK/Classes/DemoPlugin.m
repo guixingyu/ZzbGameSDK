@@ -29,7 +29,7 @@
 - (void)process:(id)input block:(WAWebPluginBlock)block {
 	bResponse = FALSE;
 	self._block = block;
-	
+	/*
 	NSString *type = input;
 	if ([type isEqualToString:@"splash_show"]) {
 		if(self.showSplash){
@@ -56,7 +56,7 @@
 		if(self.showRewardedVideo){
 			self.showRewardedVideo();
 		}
-	}
+	}*/
 
 }
 

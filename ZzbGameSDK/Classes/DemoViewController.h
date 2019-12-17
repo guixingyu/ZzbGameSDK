@@ -7,15 +7,15 @@
 //
 
 #import <webappexts/webappexts.h>
-#import <JSONModel/JSONModel.h>
-
-@interface LogModel : JSONModel
-@property (nonatomic) BOOL success;
-@property (nonatomic) NSString  *code;
-@property (nonatomic) NSString  *imgAddr;
-@property (nonatomic) NSString  *videoAddr;
-@property (nonatomic) NSString  *description;
-@end
+//#import <JSONModel/JSONModel.h>
+//
+//@interface LogModel : JSONModel
+//@property (nonatomic) BOOL success;
+//@property (nonatomic) NSString  *code;
+//@property (nonatomic) NSString  *imgAddr;
+//@property (nonatomic) NSString  *videoAddr;
+//@property (nonatomic) NSString  *description;
+//@end
 
 @interface DemoViewController : WAEMainViewController
 - (void)setAppletId:(NSInteger)appletId;
