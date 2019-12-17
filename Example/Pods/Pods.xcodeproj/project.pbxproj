@@ -4368,6 +4368,29 @@
 			};
 			name = Release;
 		};
+		28E05FC2CFBB310D3F93BEE27D4105BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC08C1C4DACF70C0960BED2A2809D6E /* ZzbGameSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZzbGameSDK/ZzbGameSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZzbGameSDK;
+				PRODUCT_NAME = ZzbGameSDK;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		2C54E9D790E0B874B7ADD206B7F4DAEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 584B37930C7308D8C426DCC1189CB8C9 /* JSONModel.xcconfig */;
@@ -4383,6 +4406,30 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = JSONModel;
 				PRODUCT_NAME = JSONModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F835CB0B1CAFF28E38C683DA50AE5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC08C1C4DACF70C0960BED2A2809D6E /* ZzbGameSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZzbGameSDK/ZzbGameSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZzbGameSDK;
+				PRODUCT_NAME = ZzbGameSDK;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -4589,30 +4636,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		6B3202E7244527D4ABCFF2AAAF396B1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC08C1C4DACF70C0960BED2A2809D6E /* ZzbGameSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ZzbGameSDK/ZzbGameSDK-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ZzbGameSDK;
-				PRODUCT_NAME = ZzbGameSDK;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		79A11244739B5A2AE28ECF9B2FB3F216 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -5118,31 +5141,6 @@
 			};
 			name = Debug;
 		};
-		E8D0CAF3B22D1BD01948C7809B8A7ABE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC08C1C4DACF70C0960BED2A2809D6E /* ZzbGameSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ZzbGameSDK/ZzbGameSDK-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ZzbGameSDK;
-				PRODUCT_NAME = ZzbGameSDK;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		EC8688887177A9C0364E61CD69D00CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8999AE665AF7144148A72543D1A480A8 /* SDWebImage.xcconfig */;
@@ -5408,8 +5406,8 @@
 		FA9CC1F2BFA4C7F7EF9DF79A5D41F746 /* Build configuration list for PBXNativeTarget "ZzbGameSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B3202E7244527D4ABCFF2AAAF396B1C /* Debug */,
-				E8D0CAF3B22D1BD01948C7809B8A7ABE /* Release */,
+				28E05FC2CFBB310D3F93BEE27D4105BC /* Debug */,
+				2F835CB0B1CAFF28E38C683DA50AE5B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

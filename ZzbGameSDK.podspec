@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZzbGameSDK'
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = 'A short description of ZzbGameSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 	'ZzbGameSDK/Classes/**/*'
   ]
   
-  s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+  s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-ObjC', 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   
   s.resource_bundles = {
     'ZzbGameSDK' => ['ZzbGameSDK/Assets/*.png']
