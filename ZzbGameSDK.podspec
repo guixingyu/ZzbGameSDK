@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZzbGameSDK'
-  s.version          = '0.8.0'
+  s.version          = '0.9.0'
   s.summary          = 'A short description of ZzbGameSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   s.resource_bundles = {
     'ZzbGameSDK' => ['ZzbGameSDK/Assets/*.png']
   }
-  
+  s.static_framework = true
   #第三方非开源framework
   s.vendored_frameworks = [
     'ZzbGameSDK/webappexts/iphoneos/webappexts.framework',
