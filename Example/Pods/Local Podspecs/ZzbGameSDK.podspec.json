@@ -1,6 +1,6 @@
 {
   "name": "ZzbGameSDK",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "summary": "A short description of ZzbGameSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/guixingyu/ZzbGameSDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "/Users/yhy/Documents/GameSDK/ios/ZzbGameSDK",
-    "tag": "0.4.0"
+    "tag": "0.6.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -32,11 +32,9 @@
   "vendored_frameworks": [
     "ZzbGameSDK/webappexts/iphoneos/webappexts.framework",
     "ZzbGameSDK/extensions/fat/extensions.framework",
-    "ZzbGameSDK/UTDID.framework",
-    "ZzbGameSDK/BUD-Frameworks/BUAdSDK.framework"
+    "ZzbGameSDK/UTDID.framework"
   ],
   "public_header_files": [
-    "ZzbGameSDK/Classes/BUDAdManager.h",
     "ZzbGameSDK/Classes/ZzbGameManager.h"
   ],
   "frameworks": [

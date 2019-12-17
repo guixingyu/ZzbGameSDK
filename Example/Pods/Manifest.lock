@@ -36,7 +36,7 @@ PODS:
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
   - ZBarSDK (1.3.1)
-  - ZzbGameSDK (0.4.0):
+  - ZzbGameSDK (0.6.0):
     - AFNetworking (~> 3.0)
     - IDMPhotoBrowser (~> 1.11.3)
     - JSONModel
@@ -88,7 +88,7 @@ SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
-  ZzbGameSDK: cedef72d157a04a7fe87bbcd17a1dde4eb234a34
+  ZzbGameSDK: 8099477e6380406456faf784e1113f184fe9613b
 
 PODFILE CHECKSUM: 065d6284bfedb885b5f1740f10c02e2ceb5dfaf9
 
