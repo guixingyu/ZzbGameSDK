@@ -49,8 +49,7 @@ TODO: Add long description of the pod here.
   ]
   
   s.public_header_files = [
-    'ZzbGameSDK/Classes/BUDAdManager.h',
-    'ZzbGameSDK/Classes/ZzbGameManager.h'
+    'ZzbGameSDK/Classes/BUDAdManager.h'
   ]
   
   s.frameworks = 'UIKit','Foundation','GLKit','VideoToolbox','StoreKit','MobileCoreServices','WebKit','MediaPlayer','CoreMedia','AVFoundation','CoreLocation','CoreTelephony','SystemConfiguration','AdSupport','CoreMotion'
